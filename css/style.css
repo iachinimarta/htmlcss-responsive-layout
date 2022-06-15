@@ -45,6 +45,18 @@ body {
     margin-top: 1.5rem;
 }
 
+.blue {
+    background-color: var(--blu-chiaro);
+}
+
+.violet {
+    background-color: var(--viola-scuro);
+}
+
+.white {
+    background-color: white;
+}
+
 
 /*************** HEADER ***************/
 header {
@@ -64,11 +76,6 @@ header {
 
 .card {
     padding: 1rem;
-    background-color: var(--blu-chiaro);
-}
-
-.row-violet {
-    background-color: var(--viola-scuro);
 }
 
 .planning {
@@ -76,8 +83,11 @@ header {
 }
 
 .develope {
-    background-color: white;
     color: black;
+}
+
+.violet.card {
+    color: white;
 }
 
 
@@ -102,6 +112,21 @@ header {
     .card.big {
         width: calc(66.666%);
     }
+
+    .violet.card {
+        display: flex;
+        width: 100%;
+    }
+
+    .violet .card-image {
+        width: 30%;
+        flex-grow: 1;
+    }
+
+    .violet .descrizione {
+        width: 70%;
+
+    }
     
 }
 
@@ -109,20 +134,12 @@ header {
 @media screen and (min-width: 992px) {
     .container {
         max-width: 940px;
+        display: flex;
     }
 
     .card.big {
         display: flex;
         justify-content: space-between;
-    }
-    
-}
-
-/* Desktop Grande */
-@media screen and (min-width: 1200px) {
-    .container {
-        max-width: 1140px;
-        display: flex;
     }
 
     .planning {
@@ -133,4 +150,14 @@ header {
         width: 50%;
     }
 }
+
+
+/* Desktop Grande */
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    
+    }
+}
+
 
