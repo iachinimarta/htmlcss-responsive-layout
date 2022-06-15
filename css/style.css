@@ -1,0 +1,37 @@
+:root {
+    --blu-scuro: #0184fd;
+    --blu-chiaro: #b5deff;
+    --viola-scuro: #9792e4;
+    --viola-chiaro: #cdcbf1;
+    --arancio: #fcc15f;
+}
+
+
+/*************** REGOLE GENERALI ***************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: ;
+}
+
+.d-flex {
+    display: flex;
+}
+
+
+/*************** HEADER ***************/
+
+.header-container {
+    background-color: var(--blu-scuro);
+    height: 80px;
+    justify-content: space-between;
+}
