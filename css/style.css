@@ -22,6 +22,7 @@ body {
 .container {
     max-width: 600px;
     margin: auto;
+    padding: 0 2rem;
 }
 
 .d-flex {
@@ -40,6 +41,10 @@ body {
     margin-bottom: 1.5rem;
 }
 
+.m-top {
+    margin-top: 1.5rem;
+}
+
 
 /*************** HEADER ***************/
 header {
@@ -53,15 +58,26 @@ header {
 
 
 /*************** MAIN ***************/
-
-
-.cards-container {
-    padding: 0 2rem;
+.container.cards-container {
+    margin: 2rem 0;
 }
 
 .card {
     padding: 1rem;
     background-color: var(--blu-chiaro);
+}
+
+.row-violet {
+    background-color: var(--viola-scuro);
+}
+
+.planning {
+    color: white;
+}
+
+.develope {
+    background-color: white;
+    color: black;
 }
 
 
@@ -106,6 +122,15 @@ header {
 @media screen and (min-width: 1200px) {
     .container {
         max-width: 1140px;
+        display: flex;
+    }
+
+    .planning {
+        width: 50%;
+    }
+
+    .develope {
+        width: 50%;
     }
 }
 
