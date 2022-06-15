@@ -13,7 +13,6 @@
     padding: 0;
     box-sizing: border-box;
     border: 2px solid #005fb7;
-    background-color: #cbdff3;
 }
 
 body {
@@ -37,8 +36,15 @@ body {
     align-items: center;
 }
 
+.m-bottom {
+    margin-bottom: 1.5rem;
+}
+
 
 /*************** HEADER ***************/
+header {
+    background-color: var(--blu-scuro);
+}
 
 .header-container {
     height: 80px;
@@ -47,4 +53,59 @@ body {
 
 
 /*************** MAIN ***************/
+
+
+.cards-container {
+    padding: 0 2rem;
+}
+
+.card {
+    padding: 1rem;
+    background-color: var(--blu-chiaro);
+}
+
+
+
+/*************** MEDIA QUERY ***************/
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 750px;
+    }
+
+    .cards-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: calc(33.333%);
+    }
+
+    .card.big {
+        width: calc(66.666%);
+    }
+    
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 940px;
+    }
+
+    .card.big {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+
+/* Desktop Grande */
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
 
