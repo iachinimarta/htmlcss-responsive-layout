@@ -60,19 +60,18 @@ body {
 
 /*************** HEADER ***************/
 header {
+    width: 100%;
+    height: 80px;
     background-color: var(--blu-scuro);
 }
 
 .header-container {
-    height: 80px;
+    height: 100%;
     padding: 0 2rem;
 }
 
 
 /*************** MAIN ***************/
-.container.cards-container {
-    margin: 2rem 0;
-}
 
 .card {
     padding: 1rem;
@@ -90,6 +89,12 @@ header {
     color: white;
 }
 
+.containerD {
+    color: black;
+    padding: 1rem;
+
+}
+
 
 
 /*************** MEDIA QUERY ***************/
@@ -100,7 +105,7 @@ header {
         max-width: 750px;
     }
 
-    .cards-container {
+    .containerA {
         display: flex;
         flex-wrap: wrap;
     }
@@ -120,12 +125,19 @@ header {
 
     .violet .card-image {
         width: 30%;
-        flex-grow: 1;
     }
 
     .violet .descrizione {
         width: 70%;
+    }
 
+    .containerD {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .containerD .card {
+        width: calc(100% / 3);
     }
     
 }
@@ -134,12 +146,22 @@ header {
 @media screen and (min-width: 992px) {
     .container {
         max-width: 940px;
-        display: flex;
+    }
+
+    .containerA {
+        width: 70%;
+        margin: 0 auto 2rem auto;
     }
 
     .card.big {
         display: flex;
         justify-content: space-between;
+    }
+
+    .containerB {
+        width: 60%;
+        margin: 2rem auto 2rem auto;
+        display: flex;
     }
 
     .planning {
@@ -148,16 +170,22 @@ header {
 
     .develope {
         width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .containerC {
+        width: 60%;
+        margin: 2rem auto 2rem auto;
     }
 }
 
 
-/* Desktop Grande */
+/* Desktop Grande
 @media screen and (min-width: 1200px) {
     .container {
         max-width: 1140px;
-    
     }
-}
+} */
 
 
