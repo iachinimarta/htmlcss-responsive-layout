@@ -12,7 +12,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 2px solid black;
+    border: 2px solid #005fb7;
+    background-color: #cbdff3;
 }
 
 body {
@@ -20,18 +21,30 @@ body {
 }
 
 .container {
-    max-width: ;
+    max-width: 600px;
+    margin: auto;
 }
 
 .d-flex {
     display: flex;
 }
 
+.space-b {
+    justify-content: space-between;
+}
+
+.a-items {
+    align-items: center;
+}
+
 
 /*************** HEADER ***************/
 
 .header-container {
-    background-color: var(--blu-scuro);
     height: 80px;
-    justify-content: space-between;
+    padding: 0 2rem;
 }
+
+
+/*************** MAIN ***************/
+
