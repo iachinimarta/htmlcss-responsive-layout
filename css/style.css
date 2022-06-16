@@ -15,7 +15,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 2px solid #005fb7;
+    /* border: 2px solid #005fb7; */
 }
 
 html {
@@ -229,9 +229,6 @@ header {
 }
 
 /*************** FOOTER ***************/
-.copyright {
-    text-decoration: underline;
-}
 
 .containerG {
     background-color: var(--grigio-scuro);
