@@ -129,7 +129,7 @@ header {
         width: 100%;
     }
 
-    .violet .image {
+    .containerC .image {
         width: 30%;
     }
 
@@ -142,8 +142,23 @@ header {
         flex-wrap: wrap;
     }
 
-    .containerD .card {
-        width: calc(100% / 3);
+    .benefits {
+        width: 100%;
+        color: var(--bianco);
+    } 
+
+    .containerD .card{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .containerE {
+        display: flex;
+    }
+
+    .containerE .right,.left {
+        width: 50%;
     }
     
 }
@@ -159,14 +174,21 @@ header {
         margin: 0 auto 2rem auto;
     }
 
+    .containerB,.containerC,.containerD,.containerE {
+        width: 60%;
+        margin: 2rem auto 2rem auto;
+    }
+
     .card.big {
         display: flex;
         justify-content: space-between;
     }
 
+    .text-big,.image-big {
+        width: 50%;
+    }
+
     .containerB {
-        width: 60%;
-        margin: 2rem auto 2rem auto;
         display: flex;
     }
 
