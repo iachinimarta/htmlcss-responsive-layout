@@ -218,7 +218,20 @@ header {
     margin: 2rem 0;
 }
 
+.containerF h4 {
+    font-weight: normal;
+}
+
+.orange-text {
+    color: var(--arancio);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
 /*************** FOOTER ***************/
+.copyright {
+    text-decoration: underline;
+}
 
 .containerG {
     background-color: var(--grigio-scuro);
