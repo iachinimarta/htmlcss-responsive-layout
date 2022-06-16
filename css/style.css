@@ -4,6 +4,9 @@
     --viola-scuro: #9792e4;
     --viola-chiaro: #cdcbf1;
     --arancio: #fcc15f;
+    --grigio-scuro: #333333;
+    --bianco: #ffffff;
+    --nero: #000000;
 }
 
 
@@ -15,7 +18,7 @@
     border: 2px solid #005fb7;
 }
 
-body {
+html {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -45,6 +48,10 @@ body {
     margin-top: 1.5rem;
 }
 
+.p-1 {
+    padding: 1rem;
+}
+
 .blue {
     background-color: var(--blu-chiaro);
 }
@@ -54,7 +61,7 @@ body {
 }
 
 .white {
-    background-color: white;
+    background-color: var(--bianco);
 }
 
 
@@ -72,29 +79,28 @@ header {
 
 
 /*************** MAIN ***************/
-
-.card {
-    padding: 1rem;
-}
-
 .planning {
-    color: white;
+    color: var(--bianco);
 }
 
 .develope {
-    color: black;
+    color: var(--nero);
 }
 
 .violet.card {
-    color: white;
+    color: var(--bianco);
 }
 
 .containerD {
-    color: black;
-    padding: 1rem;
-
+    color: var(--nero);
 }
 
+/*************** FOOTER ***************/
+
+.containerG {
+    background-color: var(--grigio-scuro);
+    color: var(--bianco);
+}
 
 
 /*************** MEDIA QUERY ***************/
@@ -123,7 +129,7 @@ header {
         width: 100%;
     }
 
-    .violet .card-image {
+    .violet .image {
         width: 30%;
     }
 
