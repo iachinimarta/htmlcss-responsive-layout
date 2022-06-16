@@ -135,6 +135,10 @@ header {
     display: none;
 }
 
+header .btn {
+    padding: 0.75rem 0;
+}
+
 
 
 
