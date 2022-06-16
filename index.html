@@ -9,16 +9,38 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
+        <!-- HEADER -->
+        <header>
+            <div class="header-container d-flex space-b a-items">
+                <img class="logo p-1" src="img/logo.png" alt="logo"/>
+                <span class="d-flex">
+                    <i id="hamburger" class="fa-solid fa-bars t-white fa-2x"></i>
+                    <div class="menu-extended">
+                        <ul class="d-flex">
+                            <li class="p-1">
+                                <a class="t-white" href="#">Planning</a>
+                            </li>
+                            <li class="p-1">
+                                <a class="t-white" href="#">Testimonials</a>
+                            </li>
+                            <li class="p-1"> 
+                                <a class="t-white" href="#">Features</a>
+                            </li>
+                            <li class="p-1">
+                                <a class="t-white" href="#">About Us</a>
+                            </li>
+                            <li class="p-1">
+                                <a href="#">Get Started</a>
+                            </li>
+                        </ul>
+                    </div>
+                </span>                
+            </div>
+        </header>
         <div class="container">
-            <!-- HEADER -->
-            <header>
-                <div class="header-container d-flex space-b a-items">
-                    <div class="logo">LOGO</div>
-                    <div class="menu">MENU</div>
-                </div>
-            </header>
 
             <!-- MAIN -->
             <main>
@@ -68,9 +90,11 @@
                 </div>
 
                 <div class="containerC">
-                    <div class="testimonials">TESTIMONIALS</div>
-                    <div class="text">Testo</div>
-                    <div class="p">Descrizione</div>
+                    <div class="testimonials">
+                        <div >TESTIMONIALS</div>
+                        <div class="text">Testo</div>
+                        <div class="p">Descrizione</div>
+                    </div>
 
                     <div class="violet card">
                         <div class="image ">Immagine</div>
@@ -153,24 +177,22 @@
                     
                 </div>
 
-                <div class="containerF violet">
-                    <div>GET STARTED</div>
-                    <div>testo</div>
-                    <div>testo grande</div>
-                    <div>descrizione</div>
-                    <div>bottone</div>
-                    <div>copyright</div>
-                </div>
-
             </main>
-
-            <!-- FOOTER -->
-            <footer>
-                <div class="containerG">
-                    <div>descrizione</div>
-                    <div>Boolean careers</div>
-                </div>
-            </footer>
         </div>
+        <!-- FOOTER -->
+        <footer>
+            <div class="containerF violet">
+                <div>GET STARTED</div>
+                <div>testo</div>
+                <div>testo grande</div>
+                <div>descrizione</div>
+                <div>bottone</div>
+                <div>copyright</div>
+            </div>
+            <div class="containerG">
+                <div>descrizione</div>
+                <div>Boolean careers</div>
+            </div>
+        </footer>
     </body>
 </html>

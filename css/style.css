@@ -64,6 +64,18 @@ html {
     background-color: var(--bianco);
 }
 
+.t-white {
+    color: var(--bianco);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 
 /*************** HEADER ***************/
 header {
@@ -73,9 +85,14 @@ header {
 }
 
 .header-container {
-    height: 100%;
     padding: 0 2rem;
 }
+
+.menu-extended {
+    display: none;
+}
+
+
 
 
 /*************** MAIN ***************/
@@ -169,14 +186,17 @@ header {
         max-width: 940px;
     }
 
-    .containerA {
-        width: 70%;
-        margin: 0 auto 2rem auto;
+    #hamburger {
+        display: none;
     }
 
-    .containerB,.containerC,.containerD,.containerE {
-        width: 60%;
-        margin: 2rem auto 2rem auto;
+    .menu-extended {
+        display: block;
+    }
+
+    .containerA {
+        width: 80%;
+        margin: auto;
     }
 
     .card.big {
@@ -190,22 +210,24 @@ header {
 
     .containerB {
         display: flex;
+        justify-content: center;
     }
 
-    .planning {
-        width: 50%;
-    }
-
-    .develope {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
+    .planning,.develope {
+        width: 40%;
     }
 
     .containerC {
-        width: 60%;
-        margin: 2rem auto 2rem auto;
+        width: 80%;
+        margin: auto;
     }
+
+    .containerD .benefits{
+        width: 80%;
+        margin: auto;
+    }
+
+
 }
 
 
