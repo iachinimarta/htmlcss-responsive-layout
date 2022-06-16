@@ -76,6 +76,10 @@ html {
     color: var(--bianco);
 }
 
+.t-lviolet {
+    color: var(--viola-chiaro);
+}
+
 .t-blue {
     color: var(--blu-scuro);
 }
@@ -170,12 +174,34 @@ header {
      font-weight: normal;
  }
 
+.centrato {
+   justify-content: center;
+
+}
+
+ .cerchio {
+     width: 150px;
+     height: 150px;
+     overflow: hidden;
+     border-radius: 50%;
+ }
+
+ .cerchio img {
+    height: 150px;
+    margin-left: -37px;
+     
+ }
+
 .violet.card {
     color: var(--bianco);
 }
 
 .containerD {
     color: var(--nero);
+}
+
+.containerD .btn {
+    margin: 2rem 0;
 }
 
 /*************** FOOTER ***************/
