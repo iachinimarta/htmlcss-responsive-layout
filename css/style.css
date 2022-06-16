@@ -204,6 +204,20 @@ header {
     margin: 2rem 0;
 }
 
+.relative {
+    position: relative;
+}
+
+.relative i {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.containerE .btn {
+    margin: 2rem 0;
+}
+
 /*************** FOOTER ***************/
 
 .containerG {
